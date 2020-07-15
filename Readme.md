@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Миронова](https://up.htmlacademy.ru/adaptive/20/user/1307951).
-* Наставник: [Александр Лялихов](https://htmlacademy.ru/priofile/id983003).
+* Наставник: [Александр Лялихов] (https://htmlacademy.ru/priofile/id983003).
 
 ---
 
