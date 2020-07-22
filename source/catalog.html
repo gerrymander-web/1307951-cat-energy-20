@@ -8,265 +8,100 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo"
+      <a class="page-header__logo logo
+                logo"
          href="index.html">
-        <img src="https://via.placeholder.com/191x38"
+        <img class="logo__img"
+             src="https://via.placeholder.com/191x38"
              width="191"
              height="38"
              alt="Логотип &laquo;Cat Energy&raquo;">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle hamburger-menu"
+
+        <button class="main-nav__toggle
+                       hamburger-menu"
                 type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <div class="main-nav__wrapper visually-hidden">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list
+                     site-list">
+
+            <li class="site-list__item
+                       site-list__item_active">
+              <a class="site-list__link">Главная</a>
             </li>
+
             <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link"
+                 href="catalog.html">Каталог продукции</a>
             </li>
+
             <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="site-list__link"
+                 href="form.html">Подбор программы</a>
             </li>
+
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="page-main">
+
       <h1 class="page-main__title">Каталог продукции</h1>
 
-      <section class="page-main__catalog">
-        <h2 class="visually-hidden">Список карточек товаров</h2>
-        <ul class="catalog__list">
-             <li class="catalog__item product-card">
-               <div class="product-card__img-column">
-                <img src="https://via.placeholder.com/80x120"
-                     width="80"
-                     height="120"
-                     alt="Cat Enegry Pro 500 g">
-              </div>
-              <div class="product-card__description-column">
-                <h3 class="product-card__title">Cat Energy Pro 500 Г</h3>
-                <table class="product-card__description-table">
-                  <tr>
-                    <td>Объем</td>
-                    <td>500 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Курица</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>700 Р</td>
-                  </tr>
-                 </table>
-               </div>
-               <a href="#"
-                  class="product-card__link button_green">Заказать</a>
-             </li>
-             <li class="catalog__item product-card">
-               <div class="product-card__img-column">
-                <img src="https://via.placeholder.com/80x120"
-                     width="80"
-                     height="120"
-                     alt="Cat Enegry Pro 1000 g">
-              </div>
-               <div class="product-card__description-column">
-                 <h3 class="product-card__title">Cat Energy Pro 1000 Г</h3>
-                 <table class="product-card__description-table">
-                   <tr>
-                     <td>Объем</td>
-                     <td>1000 г</td>
-                   </tr>
-                   <tr>
-                     <td>Вкус</td>
-                     <td>Курица</td>
-                   </tr>
-                   <tr>
-                     <td>Цена</td>
-                     <td>1000 Р</td>
-                   </tr>
-                 </table>
-               </div>
-               <a href="#"
-                  class="product-card__link button_green">Заказать</a>
-             </li>
-             <li class="catalog__item product-card">
-                <div class="product-card__img-column">
-                  <img src="https://via.placeholder.com/80x120"
-                       width="80"
-                       height="120"
-                       alt="Cat Enegry Pro 500 g">
-                </div>
-                <div class="product-card__description-column">
-                 <h3 class="product-card__title">Cat Energy Pro 500 Г</h3>
-                 <table class="product-card__description-table">
-                   <tr>
-                     <td>Объем</td>
-                     <td>500</td>
-                   </tr>
-                   <tr>
-                     <td>Вкус</td>
-                     <td>Рыба</td>
-                   </tr>
-                   <tr>
-                     <td>Цена</td>
-                     <td>700 Р</td>
-                   </tr>
-                 </table>
-                </div>
-                <a href="#"
-                     class="product-card__link button_green">Заказать</a>
-             </li>
-             <li class="catalog__item product-card">
-                <div class="product-card__img-column">
-                  <img src="https://via.placeholder.com/80x120"
-                       width="80"
-                       height="120"
-                       alt="Cat Enegry Pro 1000 g">
-                </div>
-               <div class="product-card__description-column">
-                 <h3 class="product-card__title">Cat Energy Pro 1000 Г</h3>
-                 <table class="product-card__description-table">
-                   <tr>
-                     <td>Объем</td>
-                     <td>1000 г</td>
-                   </tr>
-                   <tr>
-                     <td>Вкус</td>
-                     <td>Рыба</td>
-                   </tr>
-                   <tr>
-                     <td>Цена</td>
-                     <td>1000 Р</td>
-                   </tr>
-                 </table>
-               </div>
-               <a href="#"
-                  class="product-card__link button_green">Заказать</a>
-             </li>
-             <li class="catalog__item product-card">
-                <div class="product-card__img-column">
-                  <img src="https://via.placeholder.com/80x120"
-                       width="80"
-                       height="120"
-                       alt="Cat Enegry Slim 500 g">
-                </div>
-               <div class="product-card__description-column">
-                 <h3 class="product-card__title">Cat Energy Slim 500 Г</h3>
-                 <table class="product-card__description-table">
-                   <tr>
-                     <td>Объем</td>
-                     <td>500 г</td>
-                   </tr>
-                   <tr>
-                     <td>Вкус</td>
-                     <td>Гречка</td>
-                   </tr>
-                   <tr>
-                     <td>Цена</td>
-                     <td>400 Р</td>
-                   </tr>
-                 </table>
-               </div>
-               <a href="#"
-                  class="product-card__link button_green">Заказать</a>
-             </li>
-             <li class="catalog__item product-card">
-                <div class="product-card__img-column">
-                  <img src="https://via.placeholder.com/80x120"
-                       width="80"
-                       height="120"
-                       alt="Cat Enegry Slim 1000 g">
-                </div>
-               <div class="product-card__description-column">
-                 <h3 class="product-card__title">Cat Energy Slim 1000 Г</h3>
-                 <table class="product-card__description-table">
-                   <tr>
-                     <td>Объем</td>
-                     <td>1000 г</td>
-                   </tr>
-                   <tr>
-                     <td>Вкус</td>
-                     <td>Гречка</td>
-                   </tr>
-                   <tr>
-                     <td>Цена</td>
-                     <td>700 Р</td>
-                   </tr>
-                 </table>
-               </div>
-               <a href="#"
-                  class="product-card__link button_green">Заказать</a>
-             </li>
-             <li class="catalog__item product-card">
-                <div class="product-card__img-column">
-                  <img src="https://via.placeholder.com/80x120"
-                       width="80"
-                       height="120"
-                       alt="Cat Enegry Slim 500 g">
-                </div>
-               <div class="product-card__description-column">
-                 <h3 class="product-card__title">Cat Energy Slim 500 Г</h3>
-                 <table class="product-card__description-table">
-                   <tr>
-                     <td>Объем</td>
-                     <td>500 г</td>
-                   </tr>
-                   <tr>
-                     <td>Вкус</td>
-                     <td>Рис</td>
-                   </tr>
-                   <tr>
-                     <td>Цена</td>
-                     <td>500 Р</td>
-                   </tr>
-                 </table>
-               </div>
-               <a href="#"
-                  class="product-card__link button_green">Заказать</a>
-             </li>
-           </ul>
-
-           <p class="catalog__text_big">Показать еще 100500 товаров</p>
-           <p class="catalog__text">На самом деле вкусов гораздо больше</p>
-           <button class="catalog__button button_show-all">Показать все</button>
-
-      </section>
     </main>
+
     <footer class="page-footer">
-      <a class="page-footer__logo"
+
+      <a class="page-footer__logo
+                logo"
          href="index.html">
-        <img src="https://via.placeholder.com/128x24"
+        <img class="logo__image"
+             src="https://via.placeholder.com/128x24"
              width="128"
              height="24"
              alt="Логотип &laquo;Cat Energy&raquo;">
       </a>
-      <section class="page-footer__socials">
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a href="http://vk.com">В Контакте</a>
+
+      <section class="page-footer__social
+                      social">
+
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+
+        <ul class="social__list">
+
+          <li class="social__item">
+            <a href="http:/vk.com"
+               class="social__link social__link--vkontakte">Мы В контакте</a>
           </li>
-          <li class="social-list-item">
-            <a href="http://instagram.com">Instagram</a>
+
+          <li class="social__item">
+            <a href="http:/instagram.com"
+               class="social__link
+                      social__link--instagram">Мы в Instagram</a>
           </li>
-          <li class="social-list-item">
-            <a href="http://facebook.com">Facebook</a>
+
+          <li class="social__item">
+            <a href="http:/facebook.com"
+               class="social__link
+                      social__link--facebook">Мы в Facebook</a>
           </li>
         </ul>
       </section>
 
       <section class="developed">
+
+        <h2 class="visually-hidden">Разработано</h2>
+
         <p class="developed__text">HTML Academy</p>
-        <a class="developed__logo"
-           href="http://htmlacademy.com"></a>
+        <a href="http://htmlacademy.com"
+           class="developed__logo"></a>
+
       </section>
     </footer>
   </body>
