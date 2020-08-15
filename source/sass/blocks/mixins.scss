@@ -1,0 +1,15 @@
+@mixin container {
+  // min-width: 320px;
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+@mixin color-outline( $width: 2px, $color: red, $style: dashed) {
+  outline-color: $color;
+  outline-style: $style;
+  outline-width: $width;
+  outline-offset: -$width;
+}

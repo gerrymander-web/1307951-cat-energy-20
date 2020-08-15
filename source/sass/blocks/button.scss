@@ -1,0 +1,24 @@
+.button {
+  font-family: $special-font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic_white;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  margin: 0 auto;
+
+  &--green {
+    background-color: $basic_green;
+  }
+
+  &--grey {
+    //
+  }
+}

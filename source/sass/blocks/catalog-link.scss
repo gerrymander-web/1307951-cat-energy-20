@@ -1,0 +1,32 @@
+.catalog-link {
+  font-family: $special-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+
+  color: #000000;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: $basic_grey;
+
+  padding-top: 19px;
+  padding-bottom: 22px;
+  padding-left: 19px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 24px;
+    height: 12px;
+
+    padding-left: 17px;
+  }
+}
