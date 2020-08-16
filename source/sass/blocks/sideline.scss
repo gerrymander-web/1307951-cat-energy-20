@@ -7,7 +7,12 @@
 }
 
 .sideline__title {
-  //
+  font-family: $special-font;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  color: black;
 }
 
 .sideline__column-products {
@@ -15,7 +20,9 @@
 }
 
 .sideline__list {
-  //
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sideline__item {

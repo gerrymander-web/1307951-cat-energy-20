@@ -1,10 +1,9 @@
 .page-footer {
   @include container;
-  background-color: lightgreen;
 }
 
 .page-footer__links-wrapper {
-  //
+  background-color: $basic_grey;
 }
 
 .page-footer__logo {

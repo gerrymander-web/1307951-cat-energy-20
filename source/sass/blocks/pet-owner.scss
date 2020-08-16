@@ -3,11 +3,17 @@
 }
 
 .pet-owner__title {
-  //
+  @include form-title;
 }
 
 .pet-owner__wrapper {
   //
+}
+
+.pet-owner__info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pet-owner__email {

@@ -3,9 +3,11 @@
 }
 
 .pet-name__label {
-  //
+  @include form-text;
+  color: $special_dark-grey;
 }
 
 .pet-name__input {
-  //
+  @include form-text;
+  color: $special_dark-grey;
 }

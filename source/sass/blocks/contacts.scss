@@ -1,5 +1,12 @@
 .contacts {
   //
+  &--white {
+    background-color: $basic_white;
+  }
+
+  &--gray {
+    background-color: $basic_grey;
+  }
 }
 
 .contacts__info {

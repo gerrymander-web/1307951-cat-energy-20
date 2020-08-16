@@ -3,9 +3,11 @@
 }
 
 .phone__label {
-  //
+  @include form-text;
+  color: $special_dark-grey;
 }
 
 .phone__input {
-  //
+  @include form-text;
+  color: $special_dark-grey;
 }

@@ -1,5 +1,5 @@
 .product-card {
-  //
+  list-style: none;
 }
 
 .product-card__picture-wrapper {
@@ -15,7 +15,17 @@
 }
 
 .product-card__title {
-  //
+  font-family: $special-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+
+  &--show {
+    color: #111111;
+  }
 }
 
 .product-card__table {
@@ -31,5 +41,11 @@
 }
 
 .product-card__text {
-  //
+  font-family: $usual-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: $special_dark-grey;
 }

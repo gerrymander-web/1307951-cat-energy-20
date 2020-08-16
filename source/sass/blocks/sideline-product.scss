@@ -3,15 +3,25 @@
 }
 
 .sideline-product__title {
-  //
+  font-family: $special-font;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
 }
 
 .sideline-product__name {
-  //
+  color: $special_dark-grey;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .sideline-product__value {
-  //
+  color: $special_dark-grey;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .sideline-product__link {

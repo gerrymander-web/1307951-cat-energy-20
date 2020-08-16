@@ -3,7 +3,13 @@
 }
 
 .form__title {
-  //
+  font-family: $special-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  color: black;
 }
 
 .form__body {
@@ -11,7 +17,9 @@
 }
 
 .form__set {
-  //
+  // margin: 0;
+  // padding: 0;
+  border: none;
 }
 
 .form__comment {
@@ -23,5 +31,6 @@
 }
 
 .form__required-text {
-  //
+  font-size: 14px;
+  line-height: 16px;
 }

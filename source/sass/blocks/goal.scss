@@ -1,5 +1,7 @@
 .goal {
-  //
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .goal__value {
@@ -11,5 +13,6 @@
 }
 
 .goal__label {
-  //
+  @include form-text;
+  color: $special_dark-grey-2;
 }

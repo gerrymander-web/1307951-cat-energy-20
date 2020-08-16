@@ -3,9 +3,11 @@
 }
 
 .pet-weight__label {
-  //
+  @include form-text;
+  color: $special_dark-grey;
 }
 
 .pet-weight__input {
-  //
+  @include form-text;
+  color: $special_dark-grey;
 }

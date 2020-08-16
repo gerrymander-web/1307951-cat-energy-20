@@ -7,5 +7,6 @@
 }
 
 .option__label {
-  //
+  @include form-text;
+  color: black;
 }

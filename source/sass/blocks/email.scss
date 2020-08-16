@@ -3,9 +3,11 @@
 }
 
 .email__label {
-  //
+  @include form-text;
+  color: $special_dark-grey;
 }
 
 .email__input {
-  //
+  @include form-text;
+  color: $special_dark-grey;
 }
