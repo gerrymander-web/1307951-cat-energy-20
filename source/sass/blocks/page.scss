@@ -16,9 +16,9 @@
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $color_special_dark-grey;
 
-  background-color: $basic_white;
+  background-color: $color_basic_white;
 
   // временно
   @include color-outline(1px, orange);

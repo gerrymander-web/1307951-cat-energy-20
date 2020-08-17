@@ -3,7 +3,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: $basic_white;
+  color: $color_basic_white;
 
   text-decoration: none;
   text-transform: uppercase;
@@ -20,11 +20,11 @@
   border: none;
 
   &--green {
-    background-color: $basic_green;
+    background-color: $color_basic_green;
   }
 
   &--gray {
-    color: $special_dark-grey;
-    background-color: $basic_grey;
+    color: $color_special_dark-grey;
+    background-color: $color_basic_grey;
   }
 }
