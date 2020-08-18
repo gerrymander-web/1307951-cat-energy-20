@@ -14,16 +14,11 @@
   font-family: $special-font;
   font-size: 36px;
   line-height: 40px;
-  font-style: normal;
-  color: black;
-
-  margin: 0;
-  padding: 0;
+  color: $color_black;
 }
 
 .example__text {
-  margin: 0;
-  padding: 0;
+  //
 }
 
 .example__table {
@@ -33,30 +28,26 @@
 .example__key {
   font-family: $usual-font;
   font-size: 12px;
-  font-weight: normal;
   line-height: 12px;
 
   &--bold {
     font-family: $special-font;
     font-size: 14px;
-    font-weight: normal;
     line-height: 20px;
     text-transform: uppercase;
-    color: black;
+    color: $color_black;
   }
 }
 
 .example__value {
   font-family: $special-font;
   font-size: 24px;
-  font-weight: normal;
   line-height: 24px;
   text-transform: uppercase;
-  color: black;
+  color: $color_black;
 
   &--bold {
     font-size: 14px;
-    font-weight: normal;
     line-height: 20px;
     text-transform: uppercase;
   }

@@ -1,26 +1,18 @@
 .mechanism {
-  margin: 0;
   padding: 0 0 42px 0;
 }
 
 .mechanism__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
 }
 
 .mechanism__title {
   font-family: $special-font;
-  font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  text-decoration: none;
   text-align: left;
-  color: black;
-
-  padding: 0;
-  margin: 0 0 38px 0;
+  color: $color_black;
 }
 
 .mechanism__list {
@@ -29,27 +21,16 @@
   justify-content: space-between;
 
   list-style: none;
-
-  margin: 0;
-  padding: 0;
-
   min-height: 300px;
 }
 
 .mechanism__item {
-  margin: 0;
-  padding: 0;
   min-height: 60px;
 }
 
 .mechanism__text {
   position: relative;
-
   padding-left: 80px;
-  padding-bottom: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin: 0;
 
   &::before {
     content: "";

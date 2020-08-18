@@ -1,15 +1,13 @@
 .site-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .site-list__item {
-  font-family: $special-font;
+  font-family: $special-font-bolder;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  color: black;
+  color: $color_black;
 
   &--active {
     //

@@ -6,10 +6,8 @@
   font-family: $special-font;
   font-size: 14px;
   line-height: 18px;
-  font-weight: normal;
-  font-style: normal;
   text-transform: uppercase;
-  color: black;
+  color: $color_black;
 }
 
 .form__body {
@@ -17,8 +15,6 @@
 }
 
 .form__set {
-  // margin: 0;
-  // padding: 0;
   border: none;
 }
 

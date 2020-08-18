@@ -16,16 +16,14 @@
 .contacts__vacancy {
   font-family: $special-font;
   font-size: 16px;
-  font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
-  color: #111111;
+  color: $color_black_light;
 }
 
 .contacts__address {
   font-family: $usual-font;
   font-size: 14px;
-  font-weight: normal;
   line-height: 20px;
   font-style: normal;
 }
