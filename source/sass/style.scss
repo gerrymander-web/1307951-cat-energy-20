@@ -1,1 +1,47 @@
-// Начните писать стили здесь
+// index.html classes
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/promo.scss";
+@import "blocks/button.scss";
+@import "blocks/catalogs.scss";
+@import "blocks/group.scss";
+@import "blocks/catalog-link.scss";
+@import "blocks/mechanism.scss";
+@import "blocks/example.scss";
+@import "blocks/table.scss";
+@import "blocks/slider.scss";
+@import "blocks/photo.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
+@import "blocks/social-list.scss";
+@import "blocks/academy-info.scss";
+// catalog.html classes
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
+@import "blocks/product-table.scss";
+@import "blocks/sideline.scss";
+@import "blocks/offer.scss";
+@import "blocks/sideline-product.scss";
+// form.html classes
+@import "blocks/form.scss";
+@import "blocks/form-set.scss";
+@import "blocks/pet.scss";
+@import "blocks/pet-name.scss";
+@import "blocks/pet-weight.scss";
+@import "blocks/pet-age.scss";
+@import "blocks/goal.scss";
+@import "blocks/pet-owner.scss";
+@import "blocks/email.scss";
+@import "blocks/phone.scss";
+@import "blocks/comment.scss";
+@import "blocks/optional.scss";
+@import "blocks/option.scss";

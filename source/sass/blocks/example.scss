@@ -1,0 +1,58 @@
+.example {
+  //
+}
+
+.example__wrapper {
+  //
+}
+
+.example__column {
+  //
+}
+
+.example__title {
+  font-family: $special-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color_black;
+}
+
+.example__text {
+  //
+}
+
+.example__table {
+  //
+}
+
+.example__key {
+  font-family: $usual-font;
+  font-size: 12px;
+  line-height: 12px;
+
+  &--bold {
+    font-family: $special-font;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color_black;
+  }
+}
+
+.example__value {
+  font-family: $special-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $color_black;
+
+  &--bold {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.example__slider {
+  //
+}

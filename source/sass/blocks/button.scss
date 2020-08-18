@@ -1,0 +1,29 @@
+.button {
+  font-family: $special-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color_basic_white;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+  height: 40px;
+
+  border: none;
+
+  &--green {
+    background-color: $color_basic_green;
+  }
+
+  &--gray {
+    color: $color_special_dark-grey;
+    background-color: $color_basic_grey;
+  }
+}

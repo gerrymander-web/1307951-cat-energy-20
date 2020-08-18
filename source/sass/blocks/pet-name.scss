@@ -1,0 +1,13 @@
+.pet-name {
+  //
+}
+
+.pet-name__label {
+  @include form-text;
+  color: $color_special_dark-grey;
+}
+
+.pet-name__input {
+  @include form-text;
+  color: $color_special_dark-grey;
+}

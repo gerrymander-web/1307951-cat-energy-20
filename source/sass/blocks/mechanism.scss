@@ -1,0 +1,47 @@
+.mechanism {
+  padding: 0 0 42px 0;
+}
+
+.mechanism__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.mechanism__title {
+  font-family: $special-font;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: $color_black;
+}
+
+.mechanism__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  list-style: none;
+  min-height: 300px;
+}
+
+.mechanism__item {
+  min-height: 60px;
+}
+
+.mechanism__text {
+  position: relative;
+  padding-left: 80px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $color_basic_green;
+  }
+}

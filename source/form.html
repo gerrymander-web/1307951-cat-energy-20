@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
   <title>Подбор программы для функционального питания котов «Cat Energy»</title>
@@ -31,8 +31,8 @@
     </nav>
   </header>
 
-  <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
+  <main class="page-main page-main--no-background">
+    <h1 class="page-main__title page-main__title--black">Подбор программы</h1>
 
     <section class="form">
       <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
@@ -79,7 +79,7 @@
         <fieldset class="form__set pet-owner">
           <legend class="pet-owner__title">Контактные данные (владелец кота)</legend>
 
-          <ul class="pet-owner__wrapper">
+          <ul class="pet-owner__wrapper pet-owner__info">
             <li class="pet-owner__email email">
               <label class="email__label" for="email">E-mail:<sup>*</sup></label>
               <input class="email__input" type="email" id="email" name="email" placeholder="Kuklachev@gmail.com">
@@ -133,7 +133,7 @@
   </main>
 
   <footer class="page-footer">
-    <section class="contacts">
+    <section class="contacts contacts--gray">
       <h2 class="visually-hidden">Контактные данные</h2>
 
       <div class="contacts__info">

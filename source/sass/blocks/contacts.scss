@@ -1,0 +1,33 @@
+.contacts {
+  //
+  &--white {
+    background-color: $color_basic_white;
+  }
+
+  &--gray {
+    background-color: $color_basic_grey;
+  }
+}
+
+.contacts__info {
+  //
+}
+
+.contacts__vacancy {
+  font-family: $special-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color_black_light;
+}
+
+.contacts__address {
+  font-family: $usual-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.contacts__map {
+  //
+}

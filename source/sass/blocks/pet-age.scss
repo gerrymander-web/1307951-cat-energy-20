@@ -1,0 +1,13 @@
+.pet-age {
+  //
+}
+
+.pet-age__label {
+  @include form-text;
+  color: $color_special_dark-grey;
+}
+
+.pet-age__input {
+  @include form-text;
+  color: $color_special_dark-grey;
+}

@@ -1,0 +1,16 @@
+.goal {
+  list-style: none;
+}
+
+.goal__value {
+  //
+}
+
+.goal__radio {
+  //
+}
+
+.goal__label {
+  @include form-text;
+  color: $color_special_dark-grey-2;
+}

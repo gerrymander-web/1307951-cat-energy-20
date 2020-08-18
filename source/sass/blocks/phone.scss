@@ -1,0 +1,13 @@
+.phone {
+  //
+}
+
+.phone__label {
+  @include form-text;
+  color: $color_special_dark-grey;
+}
+
+.phone__input {
+  @include form-text;
+  color: $color_special_dark-grey;
+}

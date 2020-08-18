@@ -1,0 +1,15 @@
+.optional {
+  //
+}
+
+.optional__title {
+  @include form-title;
+}
+
+.optional__list {
+  list-style: none;
+}
+
+.optional__item {
+  //
+}
