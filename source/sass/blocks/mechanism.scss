@@ -1,36 +1,100 @@
 .mechanism {
-  padding: 0 0 42px 0;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+  }
+  @include color-outline(2px, goldenrod);
 }
 
 .mechanism__wrapper {
-  display: flex;
-  flex-direction: column;
+  @include color-outline(2px, orange);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding-right: 30px;
+  }
 }
 
 .mechanism__title {
   font-family: $special-font;
   font-size: 36px;
   line-height: 40px;
+  font-weight: normal;
   text-align: left;
   color: $color_black;
+  margin: 0;
+
+  @media(min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 32px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .mechanism__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   list-style: none;
-  min-height: 300px;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 153px;
+    grid-row-gap: 37px;
+
+    counter-reset: list1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 6.83%;
+  }
+  @include color-outline(2px, brown);
 }
 
 .mechanism__item {
+  @include color-outline(2px, violet);
   min-height: 60px;
+  padding: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 280px;
+    padding-top: 40px;
+    box-sizing: border-box;
+  }
 }
 
 .mechanism__text {
+  @include color-outline(2px, slategray);
   position: relative;
   padding-left: 80px;
+  margin: 0;
+  min-height: 60px;
 
   &::before {
     content: "";
@@ -43,5 +107,37 @@
     height: 60px;
 
     background-color: $color_basic_green;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 111px 0 0 0;
+
+    &::after {
+      counter-increment: list1;
+      content: counter(list1);
+      display: inline-block;
+      position: absolute;
+      top: -40px;
+      right: 0;
+      z-index: -1;
+
+      font-family: $special-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $color_basic_grey;
+
+      @include color-outline(1px, darkblue);
+    }
   }
 }

@@ -10,7 +10,14 @@
 }
 
 .contacts__info {
-  //
+  @include color-outline (2px, lime);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  height: 114px;
+
 }
 
 .contacts__vacancy {
@@ -19,6 +26,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color_black_light;
+  width: 125px;
+  margin:0 15px 0 0;
 }
 
 .contacts__address {
@@ -26,8 +35,14 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+
+  margin-left: auto;
+
+  @include color-outline(1px, blue);
 }
 
 .contacts__map {
-  //
+  height: 362px;
+  width: 100%;
+  @include color-outline (2px, yellow);
 }

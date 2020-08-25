@@ -1,16 +1,54 @@
 .site-list {
-  list-style: none;
+  @media (min-width: $tablet-width) {
+    margin-right: -30px;
+  }
 }
 
 .site-list__item {
+  box-sizing: border-box;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  text-align: center;
   font-family: $special-font;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
   color: $color_black;
+  border-bottom: 1px solid $color_special_grey-3;
 
-  &--active {
-    //
+  &:first-child {
+    border-top: 1px solid $color_special_grey-3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    margin-right: 30px;
+    border-bottom: none;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &--active {
+    border-bottom: 2px solid $color_basic_green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color_basic_white;
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 10px;
+
+    &--active {
+    border-bottom: 2px solid $color_basic_white;
+    }
+  }
+
+
 }

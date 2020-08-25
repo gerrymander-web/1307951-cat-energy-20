@@ -13,8 +13,8 @@
 
   margin: 0 auto;
   display: block;
-  box-sizing: border-box;
-  height: 40px;
+  // box-sizing: border-box;
+  // height: 40px;
 
   border: none;
 
@@ -25,5 +25,14 @@
   &--gray {
     color: $color_special_dark-grey;
     background-color: $color_basic_grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }

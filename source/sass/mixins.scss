@@ -7,8 +7,8 @@
   box-sizing: border-box;
 }
 
-@mixin color-outline( $width: 2px, $color: red, $style: dashed) {
-  outline-color: $color;
+@mixin color-outline( $width: 2px, $color: red, $style: solid) {
+  outline-color: fade-out($color, 0.5);
   outline-style: $style;
   outline-width: $width;
   outline-offset: -$width;

@@ -1,13 +1,17 @@
 .page-main {
-  @include container;
+  //
+}
 
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
+.page-main__wrapper {
+  // display: none;
+  @include color-outline(5px,wheat);
 
-  &--no-background {
-    background-image: none;
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
   }
 }
 
@@ -17,8 +21,22 @@
   line-height: 36px;
   text-align: center;
   color: $color_basic-white;
+  margin: -278px 0 25px 0;
+  padding-top: 0;
 
-  &--black {
+  @media (min-width: $tablet-width) {
     color: $color_black;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 62px;
+    margin-left: 117px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 111px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    text-align: left;
   }
 }
