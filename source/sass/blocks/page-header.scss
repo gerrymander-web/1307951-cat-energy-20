@@ -13,13 +13,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0px;
-    padding-right: 0;
+    padding-left: 54px;
+    padding-right: 54;
     padding-top: 53px;
     padding-bottom: 0;
     max-width: 1220px;
   }
-  @include color-outline(1px, fuchsia);
 }
 
 .page-header__wrapper {
@@ -37,10 +36,8 @@
     margin-right: 30px;
     align-items: flex-start;
   }
-
-  @include color-outline(2px, lime);
 }
+
 .page-header__logo {
   margin-right: auto;
-  // @include color-outline(2px, red);
 }

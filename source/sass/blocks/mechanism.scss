@@ -8,11 +8,9 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 11px;
   }
-  @include color-outline(2px, goldenrod);
 }
 
 .mechanism__wrapper {
-  @include color-outline(2px, orange);
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -24,7 +22,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
-    padding-right: 30px;
+    padding-right: 54px;
+    padding-left: 54px;
   }
 }
 
@@ -37,14 +36,10 @@
   color: $color_black;
   margin: 0;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 32px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -66,11 +61,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 6.83%;
   }
-  @include color-outline(2px, brown);
 }
 
 .mechanism__item {
-  @include color-outline(2px, violet);
   min-height: 60px;
   padding: 0;
 
@@ -90,7 +83,6 @@
 }
 
 .mechanism__text {
-  @include color-outline(2px, slategray);
   position: relative;
   padding-left: 80px;
   margin: 0;
@@ -136,8 +128,6 @@
       font-size: 280px;
       line-height: 280px;
       color: $color_basic_grey;
-
-      @include color-outline(1px, darkblue);
     }
   }
 }

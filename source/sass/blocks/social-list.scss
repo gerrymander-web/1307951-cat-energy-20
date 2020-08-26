@@ -1,21 +1,50 @@
 .social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
+  height: 63px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid $color_special_grey-4;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    height: 33px;
+    width: 129px;
+    justify-content: space-between;
+  }
 }
 
 .social-list__item {
-  //
+  width: 23px;
+  height: 22px;
+  margin-right: 35px;
+
+  @media (min-width: $tablet-width) {
+    height: 33px;
+    width: 30px;
+    margin-right: 0;
+  }
 }
 
 .social-list__link {
+  display: block;
+  text-indent: -80px;
+  overflow: hidden;
+
   &--vk {
-    //
+    // width: 23px;
+    // height: 16px;
   }
 
   &--instagram {
-    //
+    // width: 16px;
+    // height: 16px;
   }
 
   &--facebook {
-    //
+    // width: 22px;
+    // height: 22px;
   }
 }

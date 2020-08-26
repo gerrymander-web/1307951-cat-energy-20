@@ -35,7 +35,7 @@
     }
 
     &--active {
-    border-bottom: 2px solid $color_basic_green;
+      border-bottom: 2px solid $color_basic_green;
     }
   }
 
@@ -46,9 +46,7 @@
     padding-bottom: 10px;
 
     &--active {
-    border-bottom: 2px solid $color_basic_white;
+      border-bottom: 2px solid $color_basic_white;
     }
   }
-
-
 }

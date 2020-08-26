@@ -7,10 +7,21 @@
   &--gray {
     background-color: $color_basic_grey;
   }
+  margin: 0 auto;
+}
+
+.contacts__info-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-left: 54px;
+    padding-right: 54px;
+    margin: 0 auto;
+    max-width: 1220px;
+    height: 201px;
+  }
 }
 
 .contacts__info {
-  @include color-outline (2px, lime);
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -18,6 +29,21 @@
   margin: 0 auto;
   height: 114px;
 
+  @media (min-width: $tablet-width) {
+    height: 201px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 570px;
+    height: 201px;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
 }
 
 .contacts__vacancy {
@@ -27,7 +53,21 @@
   text-transform: uppercase;
   color: $color_black_light;
   width: 125px;
-  margin:0 15px 0 0;
+  margin: 0 15px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 71px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .contacts__address {
@@ -38,11 +78,37 @@
 
   margin-left: auto;
 
-  @include color-outline(1px, blue);
+  @media (min-width: $tablet-width) {
+    margin-right: 72px;
+    text-align: right;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    text-align: left;
+  }
 }
 
 .contacts__map {
   height: 362px;
   width: 100%;
-  @include color-outline (2px, yellow);
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -201px;
+  }
+}
+
+.contacts__new-line {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

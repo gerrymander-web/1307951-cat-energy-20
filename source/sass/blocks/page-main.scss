@@ -3,9 +3,6 @@
 }
 
 .page-main__wrapper {
-  // display: none;
-  @include color-outline(5px,wheat);
-
   @media (min-width: $tablet-width) {
     margin: 0 auto;
   }

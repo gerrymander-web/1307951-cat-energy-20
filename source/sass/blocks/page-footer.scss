@@ -1,6 +1,6 @@
 .page-footer {
-  @include color-outline (2px, red);
   margin: 0 auto;
+  background-color: $color_basic_grey;
 }
 
 .page-footer__links-wrapper {
@@ -9,6 +9,22 @@
   margin: 0 auto;
 
   background-color: $color_basic_grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 54px;
+    padding-right: 54px;
+    max-width: 1220px;
+    height: 149px;
+  }
 }
 
 .page-footer__logo {
@@ -18,7 +34,10 @@
   text-align: center;
 
   border-bottom: 2px solid $color_special_grey-4;
-  background-color: orange;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .page-footer__list {
