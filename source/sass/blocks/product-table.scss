@@ -1,13 +1,31 @@
 .product-table {
-  //
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .product-table__row {
-  //
+  // border-bottom: 1px solid red;
+  @media (min-width: $tablet-width) {
+    height: 30px;
+    border-bottom: 1px solid $color_basic_grey;
+  }
 }
 
 .product-table__column {
   color: $color_special_dark-grey;
   font-size: 12px;
   line-height: 16px;
+
+  &:first-child {
+    text-align: left;
+  }
+
+  &:last-child {
+    text-align: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
