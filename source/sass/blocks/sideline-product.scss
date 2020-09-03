@@ -5,6 +5,9 @@
   box-sizing: border-box;
   border-bottom: 1px solid $color_special_grey;
 
+  &:first-child {
+    border-top: 1px solid $color_special_grey;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 26px;

@@ -11,6 +11,10 @@
 }
 
 .contacts__info-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     position: relative;
     padding-left: 54px;
@@ -24,9 +28,7 @@
 .contacts__info {
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
+
   height: 114px;
 
   @media (min-width: $tablet-width) {
@@ -43,6 +45,7 @@
     height: 201px;
     padding-left: 76px;
     padding-right: 89px;
+    background-color: $color_basic_white;
   }
 }
 
@@ -94,7 +97,8 @@
 
 .contacts__map {
   height: 362px;
-  width: 100%;
+  min-width: 320px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     height: 400px;

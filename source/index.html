@@ -15,19 +15,22 @@
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
-        <img class="logo__img" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Логотип «Cat Energy»">
-      </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </div>
 
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
+      <div class="page-header__logo-container">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo logo">
+            <img class="logo__img" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Логотип «Cat Energy»">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__item-link">Главная</a>
+          <li class="site-list__item">
+            <a href="#" class="site-list__item-link">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html" class="site-list__item-link">Каталог продукции</a>
@@ -36,44 +39,59 @@
             <a href="form.html" class="site-list__item-link">Подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
-  </header>
+      </nav>
 
-  <main class="page-main">
-    <div class="page-main__wrapper">
-      <h1 class="page-main__title">Функциональное<br>питание для котов</h1>
-
-      <section class="promo">
-        <h2 class="visually-hidden">Подбери программу для эффективного питания своего кота</h2>
-
-        <div class="promo__wrapper">
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <img class="promo__picture" src="https://via.placeholder.com/552x499" width="552" height="499" alt="Cat Energy Pro Курица 500 г">
-          <a class="promo__button button button--green" href="form.html">Подобрать программу</a>
-        </div>
-      </section>
     </div>
+  </header>
+<!-- ---------------------- -->
+  <main class="page-main">
 
+    <div class="page-main__container-fluid">
+      <div class="page-main__container">
+        <div class="page-main__wrapper">
+          <h1 class="page-main__title page-main__title--white page-main__title--shift">Функциональное<br>питание для котов</h1>
+
+          <section class="promo">
+            <h2 class="visually-hidden">Подбери программу для эффективного питания своего кота</h2>
+
+            <div class="promo__wrapper">
+              <p class="promo__slogan">Занялся собой? Займись котом!</p>
+<!--               <img class="promo__picture" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Cat Energy Pro Курица 500 г"> -->
+
+              <img class="promo__picture" src="../img/index-can-desktop@1x.png" width="552" height="499" alt="Cat Energy Pro Курица 500 г">
+              <a class="promo__button button button--green button--small button--size-fixed" href="form.html">Подобрать программу</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+<!-- ----------------------------------------- -->
     <section class="catalogs">
       <h2 class="visually-hidden">Группы товаров</h2>
-
       <div class="catalogs__wrapper">
+
         <ul class="catalogs__list">
 
           <li class="catalogs__item group">
-            <h3 class="group__title">Похудение</h3>
-            <p class="group__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="group__link catalog-link"  href="#" >Каталог Slim</a>
+            <div class="group__wrapper">
+              <div class="group__title-wrapper">
+                <h3 class="group__title">Похудение</h3>
+              </div>
+              <p class="group__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="group__link catalog-link"  href="#" >Каталог Slim</a>
+            </div>
           </li>
 
 
           <li class="catalogs__item group">
-            <h3 class="group__title">Набор массы</h3>
-            <p class="group__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="group__link catalog-link" href="#" >Каталог Pro</a>
+            <div class="group__wrapper">
+              <div class="group__title-wrapper">
+                <h3 class="group__title">Набор массы</h3>
+              </div>
+              <p class="group__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="group__link catalog-link" href="#" >Каталог Pro</a>
+            </div>
           </li>
-
         </ul>
       </div>
     </section>
@@ -135,10 +153,10 @@
           <div class="example__slider slider">
             <div class="slider__photo">
               <div class="slider__column">
-                <!-- <img class="photo photo--before photo--active" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Вид кота до использования наших продуктов"> -->
+                <img class="photo photo--before photo--active" src="../img/before-mobile@1x.png" width="320" height="240" alt="Вид кота до использования наших продуктов">
               </div>
               <div class="slider__column">
-                <!-- <img class="photo photo--after" src="https://via.placeholder.com/251x240" width="251" height="240" alt="Вид кота после использования наших продуктов"> -->
+                <img class="photo photo--after" src="../img/after-mobile@1x.png" width="320" height="240" alt="Вид кота после использования наших продуктов">
               </div>
             </div>
 
@@ -162,7 +180,6 @@
     <section class="contacts contacts--white">
       <h2 class="visually-hidden">Контактные данные</h2>
 
-
       <div class="contacts__info-wrapper">
         <div class="contacts__info">
           <p class="contacts__vacancy">приглашаем к сотрудничеству дилеров!</p>
@@ -172,7 +189,7 @@
 
 
       <div class="contacts__map map">
-        <img class="map__img"  src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш офис расположен на улице Большая Конюшенная, дом 19/8, город Санкт-Петербург">
+        <img class="map__img"  src="https://via.placeholder.com/320x362" width="320" height="400" alt="Наш офис расположен на улице Большая Конюшенная, дом 19/8, город Санкт-Петербург">
       </div>
     </section>
 

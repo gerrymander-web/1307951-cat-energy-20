@@ -1,16 +1,24 @@
 .example {
+  // @include color-outline (3px, springgreen);
+  background-color: $color_special_grey-6;
+
   position: relative;
 
   @media (min-width: $tablet-width) {
     border-top: 1px solid $color_special_grey-3;
+    // background-color: $color_basic_white;
+    background-image: linear-gradient(to bottom, $color_basic_white 57.34%, $color_special_grey-6 42.66%);
   }
 
   @media (min-width: $desktop-width) {
     border-top: none;
+    background-color: unset;
+    background-image: linear-gradient(to bottom, $color_basic_white 0 29.57%, $color_special_grey-6 29.57% 70.43%);
   }
 }
 
 .example__wrapper {
+  // @include color-outline (3px,  cyan);
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -130,7 +138,7 @@
     padding-right: 5px;
     text-align: center;
     width: 70.16%;
-    background-color: $color_basic_white;
+    background-color: $color_special_grey-6;
 
     @media (min-width: $tablet-width) {
       font-size: 14px;
@@ -143,6 +151,8 @@
       padding-right: 7px;
       width: fit-content;
       white-space: nowrap;
+
+      background-color: $color_basic_white;
     }
 
     @media (min-width: $desktop-width) {
