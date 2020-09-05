@@ -1,27 +1,119 @@
 .sideline-product {
-  //
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid $color_special_grey;
+
+  &:first-child {
+    border-top: 1px solid $color_special_grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 28px;
+    padding-right: 38px;
+    padding-left: 38px;
+
+    border-left: 1px solid $color_special_grey;
+    border-right: 1px solid $color_special_grey;
+
+    &:first-child {
+      border-top: 1px solid $color_special_grey;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 0;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: auto 244px;
+    column-gap: 39px;
+    align-items: center;
+
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .sideline-product__title {
   font-family: $special-font;
   font-size: 16px;
   line-height: 16px;
+  font-weight: normal;
   text-transform: uppercase;
   color: $color_special_dark-grey-2;
+
+  margin: 0 0 13px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.sideline-product__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    display: flex;
+  }
+}
+
+.sideline-product__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    justify-content: space-between;
+  }
 }
 
 .sideline-product__name {
   color: $color_special_dark-grey;
   font-size: 14px;
   line-height: 14px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .sideline-product__value {
   color: $color_special_dark-grey;
   font-size: 14px;
   line-height: 14px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100px;
+    text-align: right;
+  }
 }
 
 .sideline-product__link {
-  //
+  margin: 0;
 }

@@ -1,5 +1,14 @@
 .academy-info {
-  // --
+  height: 78px;
+  display: flex;
+  align-items: center;
+  flex-direction: flex-start;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 34px;
+    justify-content: space-between;
+  }
 }
 
 .academy-info__link {
@@ -7,9 +16,15 @@
   font-size: 16px;
   line-height: 18px;
   color: $color_special_dark-grey;
+  padding: 0;
+  margin: 0;
   text-decoration: none;
 }
 
 .academy-info__logo {
-  // --
+  display: block;
+
+  width: 27px;
+  height: 34px;
+  margin-left: auto;
 }

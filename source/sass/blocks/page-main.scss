@@ -1,13 +1,77 @@
 .page-main {
-  @include container;
+  //
+}
 
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: top;
+.page-main__container-fluid {
+  // @include color-outline (2px, blue);
+
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $color_basic_green-2 64%, $color_basic_white 36%);
+  background-size: auto auto, 100%;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: contain;
 
-  &--no-background {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
     background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: -143px 0 0 0;
+
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: right top;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    z-index: -2;
+  }
+}
+
+.page-main__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 223px 54px 0 54px;
+    margin-bottom: 82px;
+  }
+}
+
+.page-main__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
+}
+
+// -------------------------------------------------------
+.page-main__title-container {
+  padding: 0 20px;
+  border-top: 1px solid $color_basic_grey-2;
+  border-bottom: 1px solid $color_basic_grey-2;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 54px;
+  }
+}
+
+.page-main__title-wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
   }
 }
 
@@ -15,10 +79,46 @@
   font-family: $special-font;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
-  color: $color_basic-white;
+  font-weight: normal;
+  color: $color_black;
 
-  &--black {
-    color: $color_black;
+  text-align: left;
+  margin: 0 0 25px 0;
+
+  &--white {
+    color: $color_basic_white;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      color: $color_black;
+    }
+  }
+
+  &--long {
+    margin: 27px 0 41px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+
+    &--shift {
+      margin: 0 0 41px 87px;
+      width: 414px;
+    }
+
+    &--long {
+      margin: 0 0 83px 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 116px 40px 80px;
+    z-index: 1;
+
+    &--long {
+      margin: 0 0 84px 0;
+    }
   }
 }

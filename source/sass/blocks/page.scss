@@ -1,19 +1,15 @@
 .page {
-  //
-}
-
-.page__body {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  min-width: 320px;
-
+  height: 100%;
   font-family: $usual-font;
   font-size: 14px;
   line-height: 18px;
-  color: $color_special_dark-grey;
+}
 
+.page__body {
+  min-height: 100%;
+  min-width: 320px;
+  margin: 0;
+  color: $color_special_dark-grey;
   background-color: $color_basic_white;
-  // временно
-  @include color-outline(1px, orange);
+  // background-color: lightsteelblue;
 }

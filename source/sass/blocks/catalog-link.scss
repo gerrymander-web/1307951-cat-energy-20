@@ -3,28 +3,36 @@
   font-size: 16px;
   line-height: 16px;
 
-  color: #000000;
+  color: $color_black;
 
   text-decoration: none;
   text-transform: uppercase;
 
-  background-color: $color_basic_grey;
-
-  padding-top: 19px;
-  padding-bottom: 22px;
-  padding-left: 19px;
-
   &::after {
     content: "";
     display: inline-block;
+    width: 24px;
+    height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 24px 12px;
+
+    margin-left: 15px;
+  }
+
+  &:hover::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 32px;
     background-size: contain;
+  }
 
-    width: 24px;
-    height: 12px;
+  &:active {
+    opacity: 30%;
+  }
 
-    padding-left: 17px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

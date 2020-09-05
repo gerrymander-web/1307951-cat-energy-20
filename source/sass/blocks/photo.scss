@@ -1,11 +1,15 @@
 .photo {
-  //
+  display: block;
+  margin: 0 auto;
+
   &--before {
-    //
+    display: block;
+    // display: none;
   }
 
   &--after {
-    //
+    // display: none;
+    display: block;
   }
 
   &--active {

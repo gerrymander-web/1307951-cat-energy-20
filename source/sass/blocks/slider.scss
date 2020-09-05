@@ -1,17 +1,82 @@
 .slider {
-  //
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
 }
 
 .slider__photo {
-  //
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    height: 656px;
+    align-items: flex-start;
+  }
 }
 
 .slider__column {
-  //
+  height: 240px;
+
+  &:first-child {
+    @media (min-width: $desktop-width) {
+      width: 365px;
+    }
+  }
+
+  &:last-child {
+    margin-top: -240px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 325px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 536px;
+  }
 }
 
 .slider__control {
-  //
+  width: 228px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 590px;
+    height: 40px;
+
+    margin-top: -68px;
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -104px 0 0 40px;
+  }
 }
 
 .slider__button {
@@ -21,14 +86,78 @@
   text-transform: uppercase;
   color: $color_black;
 
+  padding: 0;
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: lighten($color_black, 76%);
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+  }
 }
 
 .slider__scale {
-  //
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $color_special_grey;
+  border-radius: 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 12px;
+  margin-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: $color_special_grey;
+    border: none;
+    margin-right: 19px;
+    margin-left: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
 }
 
 .slider__bar {
-  //
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: $color_basic_green;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border: 12px solid $color_basic_white;
+    border-radius: 50%;
+    background-color: $color_basic_green;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      top: -14px;
+      left: 197px;
+      border-radius: 50%;
+      background-color: $color_special_grey;
+      box-shadow: 0 0 2px $color_special_grey;
+      z-index: -1;
+    }
+  }
 }
