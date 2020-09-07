@@ -1,13 +1,60 @@
 .email {
-  //
+  display: flex;
+  align-items: center;
+  margin: 0 0 14px 0;
+
+   &::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 14px;
+    background-position: center;
+    border-top: 1px solid $color_special_grey;
+    border-bottom: 1px solid $color_special_grey;
+    border-right: 1px solid $color_special_grey;
+
+    @media (min-width: $tablet-width) {
+      height: 52px;
+      width: 52px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .email__label {
   @include form-text;
   color: $color_special_dark-grey;
+  margin: 0 12px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
 }
 
 .email__input {
   @include form-text;
   color: $color_special_dark-grey;
+  position: relative;
+  flex-grow: 1;
+  height: 45px;
+  border-top: 1px solid $color_special_grey;
+  border-bottom: 1px solid $color_special_grey;
+  border-left: 1px solid $color_special_grey;
+  border-right: none;
+  padding: 0 0 0 15px;
+
+  &::placeholder {
+    color: $color_special_dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    padding-left: 21px;
+  }
 }

@@ -1,13 +1,60 @@
 .phone {
-  //
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 19px 20px;
+    background-position: center;
+    border-top: 1px solid $color_special_grey;
+    border-bottom: 1px solid $color_special_grey;
+    border-right: 1px solid $color_special_grey;
+
+    @media (min-width: $tablet-width) {
+      height: 52px;
+      width: 52px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    //
+  }
 }
 
 .phone__label {
   @include form-text;
   color: $color_special_dark-grey;
+  margin: 0 9px 0 0;
+  // vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 14px;
+  }
 }
 
 .phone__input {
   @include form-text;
   color: $color_special_dark-grey;
+  height: 45px;
+  flex-grow: 1;
+  border-top: 1px solid $color_special_grey;
+  border-bottom: 1px solid $color_special_grey;
+  border-left: 1px solid $color_special_grey;
+  border-right: none;
+  padding: 0 0 0 15px;
+
+  &::placeholder {
+    color: $color_special_dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    padding-left: 21px;
+  }
 }

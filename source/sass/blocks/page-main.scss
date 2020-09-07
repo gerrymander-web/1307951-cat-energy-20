@@ -57,6 +57,9 @@
   border-top: 1px solid $color_basic_grey-2;
   border-bottom: 1px solid $color_basic_grey-2;
 
+  &--no-bbottom {
+    border-bottom: none;
+  }
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     border: none;
@@ -98,6 +101,11 @@
     margin: 27px 0 41px 0;
   }
 
+  &--bottom-distance {
+    margin-bottom: 37px;
+    margin-top: 27px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
@@ -111,6 +119,10 @@
     &--long {
       margin: 0 0 83px 0;
     }
+
+    &--bottom-distance {
+      margin-bottom: 54px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -119,6 +131,10 @@
 
     &--long {
       margin: 0 0 84px 0;
+    }
+
+    &--bottom-distance {
+      margin: 45px 0 56px 0;
     }
   }
 }

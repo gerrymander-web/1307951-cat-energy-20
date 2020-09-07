@@ -44,108 +44,168 @@
   </header>
 
   <main class="page-main page-main--no-background">
-    <h1 class="page-main__title">Подбор программы</h1>
+    <div class="page-main__title-container page-main__title-container--no-bbottom ">
+      <div class="page-main__title-wrapper">
+        <h1 class="page-main__title page-main__title--bottom-distance">Подбор программы</h1>
+      </div>
+    </div>
 
     <section class="form">
-      <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+      <div class="form__title-container">
+        <div class="form__title-wrapper">
+          <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+        </div>
+      </div>
 
       <form class="form__body" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__set form-set">
-          <legend class="visually-hidden">Данные питомца и цель программы</legend>
 
-          <ul class="form-set__wrapper pet">
-            <li class="pet__name pet-name">
-              <label class="pet-name__label" for="pet-name">Имя:<sup>*</sup></label>
-              <input class="pet-name__input" id="pet-name" name="pet-name" type="text" placeholder="Барсик">
-            </li>
+        <div class="form__set-container">
+          <div class="form__set-wrapper">
 
-            <li class="pet__weight pet-weight">
-              <label class="pet-weight__label" for="pet-weight">Вес(кг):<sup>*</sup></label>
-              <input class="pet-weight__input" id="pet-weight" name="pet-weight" type="text" placeholder="7">
-            </li>
+            <fieldset class="form__set form-set">
 
-            <li class="pet__age pet-age">
-              <label class="pet-age__label" for="pet-age">Возраст:</label>
-              <input class="pet-age__input" id="pet-age" name="pet-age" type="text" placeholder="7">
-            </li>
-          </ul>
+              <legend class="visually-hidden">Данные питомца и цель программы</legend>
 
-          <ul class="form-set__wrapper goal">
-            <li class="goal__value">
-              <input class="goal__radio" id="lose-weight" name="goal" type="radio" value="lose">
-              <label class="goal__label" for="lose-weight">Похудение</label>
-            </li>
+              <div class="form-set__wrapper">
 
-            <li class="goal__value">
-              <input class="goal__radio" id="gain-weight" name="goal" type="radio" value="gain">
-              <label class="goal__label" for="gain-weight">Набор массы</label>
-            </li>
+                <div class="form-set__pet-container-fluid">
+                <div class="form-set__pet-container">
+                  <ul class="form-set__pet-wrapper pet">
+                    <li class="pet__name pet-name">
+                      <label class="pet-name__label" for="pet-name">Имя:<sup>*</sup></label>
+                      <input class="pet-name__input" id="pet-name" name="pet-name" type="text" placeholder="Барсик">
+                    </li>
 
-            <li class="goal__value">
-              <input class="goal__radio" id="unknown" name="goal" type="radio" value="unknown">
-              <label class="goal__label" for="unknown">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+                    <li class="pet__weight pet-weight">
+                      <label class="pet-weight__label" for="pet-weight">Вес(кг):<sup>*</sup></label>
+                      <input class="pet-weight__input" id="pet-weight" name="pet-weight" type="text" placeholder="7">
+                    </li>
 
-        <fieldset class="form__set pet-owner">
-          <legend class="pet-owner__title">Контактные данные (владелец кота)</legend>
+                    <li class="pet__age pet-age">
+                      <label class="pet-age__label" for="pet-age">Возраст:</label>
+                      <input class="pet-age__input" id="pet-age" name="pet-age" type="text" placeholder="7">
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-          <ul class="pet-owner__wrapper pet-owner__info">
-            <li class="pet-owner__email email">
-              <label class="email__label" for="email">E-mail:<sup>*</sup></label>
-              <input class="email__input" type="email" id="email" name="email" placeholder="Kuklachev@gmail.com">
-            </li>
+    <!-- --------------------------------------------------------- -->
+              <div class="form-set__goal-container-fluid">
+                <div class="form-set__goal-container">
+                  <ul class="form-set__goal-wrapper goal">
 
-            <li class="pet-owner__phone phone">
-              <label class="phone__label" for="phone">Телефон:<sup>*</sup></label>
-              <input class="phone__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-            </li>
-          </ul>
-        </fieldset>
+                    <li class="goal__value">
+                      <input class="goal__radio" id="lose-weight" name="goal" type="radio" value="lose" checked>
+                      <label class="goal__label" for="lose-weight">Похудение</label>
+                    </li>
 
-        <div class="form__comment comment">
-          <label class="comment__title" for="comment">Комментарий</label>
-          <input class="comment__text" id="comment" name="comment" type="text" placeholder="Расскажите обо всех повадках кота">
+                    <li class="goal__value">
+                      <input class="goal__radio" id="gain-weight" name="goal" type="radio" value="gain">
+                      <label class="goal__label" for="gain-weight">Набор массы</label>
+                    </li>
+
+                    <li class="goal__value">
+                      <input class="goal__radio" id="unknown" name="goal" type="radio" value="unknown">
+                      <label class="goal__label" for="unknown">Не знаю (Нужен ваш совет)</label>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              </div>
+
+            </fieldset>
+          </div>
         </div>
 
+<!-- ------------------------------------- -->
+        <fieldset class="form__set pet-owner">
+          <div class="pet-owner__title-wrapper">
+            <legend class="pet-owner__title">Контактные данные (владелец кота)</legend>
+          </div>
+
+          <div class="pet-owner__container-fluid">
+            <div class="pet-owner__container">
+              <ul class="pet-owner__wrapper pet-owner__info">
+
+                <li class="pet-owner__email email">
+                  <label class="email__label" for="email">E-mail:<sup>*</sup></label>
+                  <input class="email__input" type="email" id="email" name="email" placeholder="Kuklachev@gmail.com">
+                </li>
+
+                <li class="pet-owner__phone phone">
+                  <label class="phone__label" for="phone">Телефон:<sup>*</sup></label>
+                  <input class="phone__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </fieldset>
+<!-- ---------------------------------------------------------- -->
+        <div class="form__comment comment">
+          <div class="comment__title-wrapper">
+            <label class="comment__title" for="comment">Комментарий</label>
+          </div>
+
+          <div class="comment__container">
+            <div class="comment__wrapper">
+              <textarea class="comment__text" id="comment" name="comment" type="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </div>
+        </div>
+<!-- ---------------------------------------------------------- -->
+
         <fieldset class="form__set optional">
-          <legend class="optional__title">Дополнительно</legend>
 
-          <ul class="optional__list">
-            <li class="optional__item option">
-              <input class="option__checkbox" name="sweetener" id="sweetener" value="sweetener" type="checkbox" checked>
-              <label class="option__label" for="sweetener">Сахарозаменитель</label>
-            </li>
+          <div class="optional__title-container">
+            <div class="optional__title-wrapper">
+              <legend class="optional__title">Дополнительно</legend>
+            </div>
+          </div>
 
-            <li class="optional__item option">
-              <input class="option__checkbox" name="water" id="water" value="water" type="checkbox">
-              <label class="option__label" for="water">Вода</label>
-            </li>
+          <div class="optional__container">
+           <div class="optional__wrapper">
+             <ul class="optional__list">
+                <li class="optional__item option">
+                  <input class="option__checkbox" name="sweetener" id="sweetener" value="sweetener" type="checkbox" checked>
+                  <label class="option__label" for="sweetener">Сахарозаменитель</label>
+                </li>
 
-            <li class="optional__item option">
-              <input class="option__checkbox" name="milk" id="milk" value="milk" type="checkbox">
-              <label class="option__label" for="milk">Молоко</label>
-            </li>
+                <li class="optional__item option">
+                  <input class="option__checkbox" name="water" id="water" value="water" type="checkbox">
+                  <label class="option__label" for="water">Вода</label>
+                </li>
 
-            <li class="optional__item option">
-              <input class="option__checkbox" name="vitamins" id="vitamins" value="vitamins" type="checkbox">
-              <label class="option__label" for="vitamins">Витамины</label>
-            </li>
-          </ul>
+                <li class="optional__item option">
+                  <input class="option__checkbox" name="milk" id="milk" value="milk" type="checkbox">
+                  <label class="option__label" for="milk">Молоко</label>
+                </li>
+
+                <li class="optional__item option">
+                  <input class="option__checkbox" name="vitamins" id="vitamins" value="vitamins" type="checkbox">
+                  <label class="option__label" for="vitamins">Витамины</label>
+                </li>
+              </ul>
+            </div>
+          </div>
         </fieldset>
 
-        <p class="form__button">
-          <button class="button button--green" type="submit">Отправить заявку</button>
-        </p>
-        <p class="form__required-text"><sup>*</sup> - Обязательные поля</p>
+        <div class="form__button-container">
+          <div class="form__button-wrapper">
+            <p class="form__button">
+              <button class="button button--green button--full-size" type="submit">Отправить заявку</button>
+            </p>
+            <p class="form__required-text"><sup>*</sup> - Обязательные поля</p>
+          </div>
+        </div>
 
       </form>
     </section>
   </main>
 
   <footer class="page-footer">
-    <section class="contacts contacts--white">
+    <section class="contacts">
       <h2 class="visually-hidden">Контактные данные</h2>
 
       <div class="contacts__info-wrapper">

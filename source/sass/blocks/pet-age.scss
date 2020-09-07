@@ -1,13 +1,33 @@
 .pet-age {
-  //
+  @include color-outline (2px, purple);
+  margin: 0 0 24px 0;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .pet-age__label {
   @include form-text;
   color: $color_special_dark-grey;
+  margin-right: 15px;
 }
 
 .pet-age__input {
   @include form-text;
   color: $color_special_dark-grey;
+  height: 45px;
+  flex-grow: 1;
+  border: 1px solid $color_spacial_grey-8;
+
+  &::placeholder {
+    padding-left: 16px;
+    color: $color_special_dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
 }

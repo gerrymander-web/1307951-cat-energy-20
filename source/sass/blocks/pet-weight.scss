@@ -1,13 +1,37 @@
 .pet-weight {
-  //
+  @include color-outline (2px, purple);
+  display: flex;
+  align-items: center;
+  margin: 0 0 14px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .pet-weight__label {
   @include form-text;
   color: $color_special_dark-grey;
+  margin-right: 15px;
 }
 
 .pet-weight__input {
   @include form-text;
   color: $color_special_dark-grey;
+  height: 45px;
+  flex-grow: 1;
+  border: 1px solid $color_spacial_grey-8;
+
+  &::placeholder {
+    padding-left: 16px;
+    color: $color_special_dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
 }

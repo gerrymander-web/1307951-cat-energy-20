@@ -2,16 +2,98 @@
   //
 }
 
+.pet-owner__title-wrapper {
+  @include color-outline (2px, red);
+  width: 100%;
+  margin: 26px 0 32px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    border: 1px solid $color_basic_green;
+    top: 18px;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 76px 0;
+  }
+}
+
 .pet-owner__title {
-  @include form-title;
+  @include color-outline (2px, blue);
+  padding: 0 15px 0 19px;
+  width: 221px;
+  font-family: $special-font;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: normal;
+  color: $color_black;
+  background-color: $color_basic_white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    width: 593px;
+    padding: 0 40px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
+}
+
+.pet-owner__container-fluid {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.pet-owner__container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 65px 0 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 54px;
+    margin: 0 auto;
+  }
+
 }
 
 .pet-owner__wrapper {
-  //
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    @include color-outline(2px, green);
+    max-width: 1220px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
 }
 
 .pet-owner__info {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .pet-owner__email {
