@@ -18,7 +18,7 @@
     // @include color-outline (2px, yellow);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 174px auto;
+    grid-template-columns: 204px auto;
     column-gap: 30px;
   }
 
@@ -31,7 +31,7 @@
 }
 
 .page-header__logo-container {
-  padding: 11px 20px 17px 20px;
+  padding: 11px 20px 13px 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {

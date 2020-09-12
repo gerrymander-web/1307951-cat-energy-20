@@ -43,10 +43,9 @@
   }
 
   @media (min-width: $tablet-width) {
-      line-height: 40px;
-      padding-left: 59px;
-    }
-
+    line-height: 40px;
+    padding-left: 59px;
+  }
 }
 
 .option__checkbox:checked + .option__label::before {

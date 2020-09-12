@@ -20,7 +20,6 @@
     max-width: 1220px;
     margin: 0 auto;
   }
-
 }
 
 .form__title {
@@ -104,6 +103,11 @@
   @media (min-width: $tablet-width) {
     width: 282px;
     margin-right: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin-right: 81px;
   }
 }
 

@@ -17,9 +17,16 @@
   }
 }
 
+.example__container {
+  // padding: 0 20px;
+}
+
 .example__wrapper {
-  // @include color-outline (3px,  cyan);
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  @include color-outline (3px,  cyan);
+  margin: 0 auto 25px auto;
+
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
@@ -55,10 +62,9 @@
 }
 
 .example__column {
-  &:first-child {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 42px;
+  &--left {
+    padding: 0 20px;
+    margin: 0 0 34px 0;
 
     @media (min-width: $tablet-width) {
       padding: 0;
@@ -77,6 +83,8 @@
   }
 }
 
+
+
 .example__title {
   font-family: $special-font;
   font-size: 36px;
@@ -84,7 +92,7 @@
   font-weight: normal;
   color: $color_black;
   margin-top: 27px;
-  margin-bottom: 37px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -101,6 +109,7 @@
 
 .example__text {
   margin: 0 0 25px 0;
+  padding-right: 5px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
@@ -131,8 +140,8 @@
   line-height: 12px;
 
   &:not(&--total) {
-    margin-top: 10px;
-    margin-left: 14.92%;
+    margin-top: 9px;
+    margin-left: 11.92%;
     margin-right: 14.92%;
     padding-left: 5px;
     padding-right: 5px;

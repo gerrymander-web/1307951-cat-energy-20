@@ -12,6 +12,10 @@
 
   margin-bottom: 22px;
 
+  @media (min-resolution: $retina) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: none;
   }
@@ -25,6 +29,10 @@
     background-size: 50% auto;
     background-repeat: no-repeat;
     z-index: -2;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -60,6 +68,7 @@
   &--no-bbottom {
     border-bottom: none;
   }
+
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     border: none;

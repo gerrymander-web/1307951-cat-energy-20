@@ -49,7 +49,7 @@
   }
 }
 
-.form-set__goal-container-fluid{
+.form-set__goal-container-fluid {
   width: 100%;
   border-bottom: 1px solid $color_special_grey-7;
 
@@ -64,7 +64,7 @@
   }
 }
 
-.form-set__goal-container{
+.form-set__goal-container {
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -76,8 +76,7 @@
   }
 }
 
-.form-set__goal-wrapper{
+.form-set__goal-wrapper {
   // @include color-outline (2px, gold);
   margin: 0 auto;
 }
-

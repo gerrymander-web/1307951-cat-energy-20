@@ -59,12 +59,14 @@
 }
 
 .slider__control {
+  @include color-outline(2px, red);
   width: 228px;
   height: 40px;
-  margin: 0 auto;
+  margin: 23px 45px 0 49px;
   display: flex;
   justify-content: center;
   align-items: center;
+
 
   @media (min-width: $tablet-width) {
     width: 590px;
@@ -113,8 +115,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-right: 12px;
-  margin-left: 12px;
+  margin: 0 18px;
 
   @media (min-width: $tablet-width) {
     width: 428px;
