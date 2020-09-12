@@ -24,6 +24,7 @@
 .example__wrapper {
   display: flex;
   flex-direction: column;
+
   @include color-outline (3px,  cyan);
   margin: 0 auto 25px auto;
 
@@ -82,8 +83,6 @@
     margin: 0;
   }
 }
-
-
 
 .example__title {
   font-family: $special-font;
