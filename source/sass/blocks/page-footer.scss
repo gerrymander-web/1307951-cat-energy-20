@@ -30,7 +30,7 @@
 .page-footer__logo {
   display: block;
   padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 26px;
   text-align: center;
 
   border-bottom: 2px solid $color_special_grey-4;
@@ -38,6 +38,14 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
   }
+}
+
+.page-footer__list-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid $color_special_grey-4;
+  height: 64px;
 }
 
 .page-footer__list {

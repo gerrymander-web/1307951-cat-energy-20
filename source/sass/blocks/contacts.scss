@@ -52,11 +52,11 @@
 .contacts__vacancy {
   font-family: $special-font;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $color_black_light;
   width: 125px;
-  margin: 0 15px 0 0;
+  margin: 0 auto 0 0;
 
   @media (min-width: $tablet-width) {
     margin-left: 71px;
@@ -97,8 +97,30 @@
 
 .contacts__map {
   height: 362px;
-  min-width: 320px;
+  width: 100%;
   text-align: center;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: calc(50% - 58px / 2);
+    width: 58px;
+    height: 53px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
+
 
   @media (min-width: $tablet-width) {
     height: 400px;
@@ -107,6 +129,13 @@
   @media (min-width: $desktop-width) {
     margin-top: -201px;
   }
+}
+
+.contacts__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .contacts__new-line {

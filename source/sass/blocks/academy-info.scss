@@ -1,8 +1,8 @@
 .academy-info {
-  height: 78px;
+  height: 76px;
   display: flex;
   align-items: center;
-  flex-direction: flex-start;
+  justify-content: flex-start;
 
   @media (min-width: $tablet-width) {
     width: 163px;
@@ -12,19 +12,32 @@
 }
 
 .academy-info__link {
-  font-family: $usual-font;
-  font-size: 16px;
-  line-height: 18px;
-  color: $color_special_dark-grey;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0;
   margin: 0;
   text-decoration: none;
 }
 
-.academy-info__logo {
-  display: block;
-
-  width: 27px;
-  height: 34px;
-  margin-left: auto;
+.academy-info__copyright {
+  font-family: $usual-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color_special_dark-grey;
 }
+
+.academy-info__logo {
+  width: 41px;
+  height: 41px;
+  margin: 0;
+  padding: 0;
+}
+
+.academy-info__icon {
+  width: 53px;
+  height: 40px;
+  fill: $color_special_grey-2;
+}
+

@@ -1,12 +1,12 @@
 .social-list {
+  width: 47%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
-  height: 63px;
   margin: 0;
   padding: 0;
-  border-bottom: 2px solid $color_special_grey-4;
+  // border-bottom: 2px solid $color_special_grey-4;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -17,9 +17,9 @@
 }
 
 .social-list__item {
+  @include color-outline(1px, lime);
   width: 23px;
-  height: 22px;
-  margin-right: 35px;
+  height: 23px;
 
   @media (min-width: $tablet-width) {
     height: 33px;
@@ -29,22 +29,35 @@
 }
 
 .social-list__link {
-  display: block;
-  text-indent: -80px;
-  overflow: hidden;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    fill: $color_special_grey-2;
+    display: block;
+  }
 
   &--vk {
-    // width: 23px;
-    // height: 16px;
+    width: 23px;
+    height: 23px;
+    @include color-outline (1px, red);
+
   }
 
   &--instagram {
-    // width: 16px;
-    // height: 16px;
+    width: 23px;
+    height: 23px;
+    @include color-outline (1px, red);
   }
 
   &--facebook {
-    // width: 22px;
-    // height: 22px;
+    width: 23px;
+    height: 23px;
+    @include color-outline (1px, red);
   }
 }
+
+
+
